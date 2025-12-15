@@ -363,6 +363,8 @@ private extension MenuBarItemTag.Namespace {
         // which are more likely not to have a bundle ID.
         if let sourcePID, let app = NSRunningApplication(processIdentifier: sourcePID) {
             self = .optional(app.bundleIdentifier ?? app.localizedName)
+        } else if sourcePID == nil, let title = itemWindow.title, title.hasPrefix("Ice.ControlItem.") {
+            self = Self.ice
         } else if let uuid = Self.uuidCache[itemWindow.windowID] {
             self = .uuid(uuid)
         } else {
