@@ -1,0 +1,247 @@
+/* Simplified Chinese (zh-Hans) Localization for Ice */
+
+// MARK: - Common
+
+"OK" = "好";
+"Done" = "完成";
+"Reset" = "重置";
+"Apply" = "应用";
+"Quit" = "退出";
+"Cancel" = "取消";
+"Continue" = "继续";
+"Continue in Limited Mode" = "以受限模式继续";
+"Never" = "从未";
+"BETA" = "测试版";
+"ERROR" = "错误";
+"This action cannot be undone." = "此操作无法撤销。";
+"Click Item" = "点击项目";
+"Show Item" = "显示项目";
+
+// MARK: - App Info
+
+"Ice" = "Ice";
+"Version %@" = "版本 %@";
+
+// MARK: - Settings Navigation
+
+"General" = "通用";
+"Menu Bar Layout" = "菜单栏布局";
+"Menu Bar Appearance" = "菜单栏外观";
+"Hotkeys" = "快捷键";
+"Advanced" = "高级";
+"About" = "关于";
+
+// MARK: - General Settings - App Options
+
+"Launch at Login" = "登录时启动";
+
+// MARK: - General Settings - Ice Icon
+
+"Show Ice icon" = "显示 Ice 图标";
+"Click to show hidden menu bar items. Right-click to access Ice's settings." = "点击以显示隐藏的菜单栏项目。右键点击以访问 Ice 设置。";
+"You can still access Ice's settings by right-clicking an empty area in the menu bar" = "您仍可通过在菜单栏空白区域点击右键来访问 Ice 设置";
+"Ice icon" = "Ice 图标";
+"Choose image…" = "选取图像…";
+"Choose a custom icon to show in the menu bar." = "选择一个自定义图标显示在菜单栏中。";
+"Custom icon uses dynamic appearance" = "自定义图标使用动态外观";
+"Display the icon as a monochrome image that dynamically adjusts to match the menu bar's appearance. This setting removes all color from the icon, but ensures consistent rendering with both light and dark backgrounds." = "将图标显示为单色图像，动态调整以匹配菜单栏的外观。此设置会移除图标的所有颜色，但可确保在浅色和深色背景下都能一致呈现。";
+
+// MARK: - General Settings - Ice Bar
+
+"Use Ice Bar" = "使用 Ice 栏";
+"Show hidden menu bar items in a separate bar below the menu bar." = "在菜单栏下方的独立栏中显示隐藏的菜单栏项目。";
+"Location" = "位置";
+"The Ice Bar's location changes based on context." = "Ice 栏的位置会根据情境自动变化。";
+"The Ice Bar is centered below the mouse pointer." = "Ice 栏居中显示在鼠标指针下方。";
+"The Ice Bar is centered below the Ice icon." = "Ice 栏居中显示在 Ice 图标下方。";
+
+// IceBarLocation enum
+"Dynamic" = "动态";
+"Mouse pointer" = "鼠标指针";
+
+// MARK: - General Settings - Show Options
+
+"Show on click" = "点击时显示";
+"Click inside an empty area of the menu bar to show hidden menu bar items." = "点击菜单栏空白区域以显示隐藏的菜单栏项目。";
+"Show on hover" = "悬停时显示";
+"Hover over an empty area of the menu bar to show hidden menu bar items." = "将鼠标悬停在菜单栏空白区域以显示隐藏的菜单栏项目。";
+"Show on scroll" = "滚动时显示";
+"Scroll or swipe in the menu bar to show hidden menu bar items." = "在菜单栏中滚动或轻扫以显示隐藏的菜单栏项目。";
+
+// MARK: - General Settings - Menu Bar Item Spacing
+
+"Menu bar item spacing" = "菜单栏项目间距";
+"Apply the current spacing" = "应用当前间距";
+"Reset to the default spacing" = "重置为默认间距";
+"Applying this setting will relaunch all apps with menu bar items. Some apps may need to be manually relaunched." = "应用此设置将重新启动所有带有菜单栏项目的应用。某些应用可能需要手动重新启动。";
+"Note: You may need to log out and back in for this setting to apply properly." = "注意：您可能需要注销并重新登录才能正确应用此设置。";
+
+// Spacing values
+"none" = "无";
+"default" = "默认";
+"max" = "最大";
+
+// MARK: - General Settings - Auto Rehide
+
+"Automatically rehide" = "自动重新隐藏";
+"Strategy" = "策略";
+"Menu bar items are rehidden using a smart algorithm." = "使用智能算法重新隐藏菜单栏项目。";
+"Menu bar items are rehidden after a fixed amount of time." = "在固定时间后重新隐藏菜单栏项目。";
+"Menu bar items are rehidden when the focused app changes." = "当焦点应用改变时重新隐藏菜单栏项目。";
+
+// RehideStrategy enum
+"Smart" = "智能";
+"Timed" = "定时";
+"Focused app" = "焦点应用";
+
+// Time intervals
+"%@ second" = "%@ 秒";
+"%@ seconds" = "%@ 秒";
+
+// MARK: - Advanced Settings - Menu Bar Sections
+
+"Menu Bar Sections" = "菜单栏分区";
+"Enable the always-hidden section" = "启用始终隐藏分区";
+"Show all sections when ⌘ Command + dragging menu bar items" = "按住 ⌘ Command 拖动菜单栏项目时显示所有分区";
+"Section divider style" = "分区分隔符样式";
+
+// SectionDividerStyle enum
+"None" = "无";
+"Spacer" = "间隔";
+"Divider" = "分隔符";
+
+// MARK: - Advanced Settings - Other
+
+"Other" = "其他";
+"Hide app menus when showing menu bar items" = "显示菜单栏项目时隐藏应用菜单";
+"Make more room in the menu bar by hiding the current app menus if needed. macOS requires Ice to make itself visible in the Dock while this setting is in effect." = "必要时通过隐藏当前应用菜单来为菜单栏腾出更多空间。启用此设置时，macOS 要求 Ice 在程序坞中保持可见。";
+"Enable secondary context menu" = "启用辅助上下文菜单";
+"Right-click in an empty area of the menu bar to display a minimal version of Ice's menu. Disable this setting if you encounter conflicts with other apps." = "在菜单栏空白区域点击右键以显示 Ice 的精简菜单。如果与其他应用发生冲突，请禁用此设置。";
+"Show on hover delay" = "悬停显示延迟";
+"The amount of time to wait before showing on hover." = "悬停后等待显示的时间。";
+"Temporarily shown item delay" = "临时显示项目延迟";
+"The amount of time to wait before hiding temporarily shown menu bar items." = "临时显示的菜单栏项目隐藏前的等待时间。";
+
+// MARK: - Hotkeys Settings
+
+"Menu Bar Items" = "菜单栏项目";
+"Toggle the hidden section" = "切换隐藏分区";
+"Toggle the always-hidden section" = "切换始终隐藏分区";
+"Search menu bar items" = "搜索菜单栏项目";
+"Enable the Ice Bar" = "启用 Ice 栏";
+"Toggle application menus" = "切换应用菜单";
+
+// MARK: - Hotkey Recorder
+
+"Type Hotkey" = "输入快捷键";
+"Record Hotkey" = "录制快捷键";
+"Hotkey is reserved by macOS" = "该快捷键已被 macOS 保留";
+
+// MARK: - About Settings
+
+"Automatically check for updates" = "自动检查更新";
+"Automatically download updates" = "自动下载更新";
+"Check for Updates" = "检查更新";
+"Last checked: %@" = "上次检查：%@";
+"Quit Ice" = "退出 Ice";
+"Acknowledgements" = "致谢";
+"Contribute" = "贡献代码";
+"Report a Bug" = "报告错误";
+"Support Ice" = "支持 Ice";
+
+// MARK: - Menu Bar Layout
+
+"Drag to arrange your menu bar items into different sections." = "拖动以将菜单栏项目排列到不同的分区。";
+"Items can also be arranged by ⌘ Command + dragging them in the menu bar." = "您也可以按住 ⌘ Command 在菜单栏中拖动来排列项目。";
+"Ice cannot arrange menu bar items in automatically hidden menu bars." = "Ice 无法在自动隐藏的菜单栏中排列项目。";
+"Menu bar layout requires screen recording permissions." = "菜单栏布局需要屏幕录制权限。";
+"Go to Advanced Settings" = "前往高级设置";
+"%@ Section" = "%@分区";
+"Unable to display menu bar items" = "无法显示菜单栏项目";
+"Loading menu bar items…" = "正在加载菜单栏项目…";
+
+// MenuBarSection.Name enum
+"Visible" = "可见";
+"Hidden" = "隐藏";
+"Always-Hidden" = "始终隐藏";
+
+// MARK: - Permissions
+
+"Permissions" = "权限";
+"Ice needs your permission to manage the menu bar." = "Ice 需要您的权限来管理菜单栏。";
+"Absolutely no personal information is collected or stored." = "绝不收集或存储任何个人信息。";
+"Ice needs this to:" = "Ice 需要此权限来：";
+"Ice can work in a limited mode without this permission." = "Ice 可在没有此权限的情况下以受限模式运行。";
+"Permission Granted" = "已授予权限";
+"Grant Permission" = "授予权限";
+
+// Permission Titles
+"Accessibility" = "辅助功能";
+"Screen Recording" = "屏幕录制";
+
+// Permission Details
+"Get real-time information about the menu bar." = "获取菜单栏的实时信息。";
+"Arrange menu bar items." = "排列菜单栏项目。";
+"Edit the menu bar's appearance." = "编辑菜单栏的外观。";
+"Display images of individual menu bar items." = "显示各个菜单栏项目的图像。";
+
+// MARK: - Menu Bar Appearance Editor
+
+"Use dynamic appearance" = "使用动态外观";
+"Apply different settings based on the current system appearance." = "根据当前系统外观应用不同的设置。";
+"Ice cannot edit the appearance of automatically hidden menu bars." = "Ice 无法编辑自动隐藏菜单栏的外观。";
+"Menu Bar Shape" = "菜单栏形状";
+"Tip: You can also edit these settings by right-clicking in an empty area of the menu bar." = "提示：您也可以在菜单栏空白区域点击右键来编辑这些设置。";
+"Tint" = "色调";
+"Shadow" = "阴影";
+"Border" = "边框";
+"Border Color" = "边框颜色";
+"Border Width" = "边框宽度";
+"Use inset shape on screens with notch" = "在带有刘海的屏幕上使用内嵌形状";
+"Hold to Preview" = "按住以预览";
+
+// SystemAppearance enum
+"Light Appearance" = "浅色外观";
+"Dark Appearance" = "深色外观";
+
+// MARK: - Shape Picker
+
+"Shape Kind" = "形状类型";
+"Full" = "完整";
+"Split" = "分离";
+"No shape kind selected" = "未选择形状类型";
+"Leading End Cap" = "前端形状";
+"Trailing End Cap" = "后端形状";
+"Square Cap" = "方角";
+"Round Cap" = "圆角";
+
+// MenuBarTintKind enum
+"Solid" = "纯色";
+"Gradient" = "渐变";
+
+// MARK: - Ice Bar
+
+"Ice Bar" = "Ice 栏";
+"The Ice Bar requires screen recording permissions." = "Ice 栏需要屏幕录制权限。";
+"Open Ice Settings" = "打开 Ice 设置";
+"Ice cannot display menu bar items for automatically hidden menu bars" = "Ice 无法显示自动隐藏菜单栏的项目";
+
+// MARK: - Right-Click Menus (NSMenuItem)
+
+"Ice Settings…" = "Ice 设置…";
+"Search Menu Bar Items" = "搜索菜单栏项目";
+"Show %@ Section" = "显示%@分区";
+"Hide %@ Section" = "隐藏%@分区";
+"Check for Updates…" = "检查更新…";
+"Edit Menu Bar Appearance…" = "编辑菜单栏外观…";
+
+// MARK: - Menu Bar Search
+
+"Search menu bar items…" = "搜索菜单栏项目…";
+
+// MARK: - Control Item Image Set Names
+
+"IceCube" = "冰块";
+"Dot" = "圆点";
+"Chevron" = "箭头";
+"Custom" = "自定义";
