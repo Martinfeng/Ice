@@ -27,9 +27,9 @@ struct GeneralSettingsPane: View {
     private var rehideIntervalKey: LocalizedStringKey {
         let formatted = settings.rehideInterval.formatted()
         if settings.rehideInterval == 1 {
-            return LocalizedStringKey(formatted + " second")
+            return "\(formatted) second"
         } else {
-            return LocalizedStringKey(formatted + " seconds")
+            return "\(formatted) seconds"
         }
     }
 
@@ -60,7 +60,9 @@ struct GeneralSettingsPane: View {
 
     @ViewBuilder
     private var appOptions: some View {
-        LaunchAtLogin.Toggle()
+        LaunchAtLogin.Toggle {
+            Text("Launch at Login")
+        }
     }
 
     // MARK: Ice Icon Options

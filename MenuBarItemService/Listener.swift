@@ -73,11 +73,14 @@ final class Listener {
         Logger.default.debug("Activating listener")
 
         do {
-            if #available(macOS 26.0, *) {
-                try uncheckedActivateWithSameTeamRequirement()
-            } else {
-                try uncheckedActivate()
-            }
+            // NOTE: Disabled isFromSameTeam() requirement for ad-hoc signing compatibility.
+            // For production builds with proper Developer ID signing, use:
+            // if #available(macOS 26.0, *) {
+            //     try uncheckedActivateWithSameTeamRequirement()
+            // } else {
+            //     try uncheckedActivate()
+            // }
+            try uncheckedActivate()
         } catch {
             Logger.default.error("Failed to activate listener with error \(error)")
         }

@@ -49,14 +49,20 @@ enum ScreenCapture {
 
     /// Requests screen capture permissions.
     static func requestPermissions() {
-        if #available(macOS 15.0, *) {
-            // TODO: Find out if we still need this.
-            // CGRequestScreenCaptureAccess() is broken on macOS 15. SCShareableContent requires
-            // screen capture permissions, and triggers a request if the user doesn't have them.
-            SCShareableContent.getWithCompletionHandler { _, _ in }
-        } else {
-            CGRequestScreenCaptureAccess()
-        }
+        // NOTE: On macOS 15+, SCShareableContent.getWithCompletionHandler can trigger a system
+        // restart loop for ad-hoc signed apps, causing permissions to reset after each restart.
+        // We use CGRequestScreenCaptureAccess() instead, which is safer (though it may not show
+        // a prompt on macOS 15+). The PermissionsWindow opens System Settings automatically,
+        // allowing the user to grant permission manually.
+
+        CGRequestScreenCaptureAccess()
+
+        // Original code for properly signed apps:
+        // if #available(macOS 15.0, *) {
+        //     SCShareableContent.getWithCompletionHandler { _, _ in }
+        // } else {
+        //     CGRequestScreenCaptureAccess()
+        // }
     }
 
     // MARK: Capture Window(s)
